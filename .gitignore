@@ -1,0 +1,11 @@
+# build
+obj/
+bin/
+
+# editor
+.vscode/
+.vstudio/
+
+# db
+*.db
+*.sqlite3
