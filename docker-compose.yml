@@ -1,0 +1,14 @@
+services:
+  sql-server:
+    image: mcr.microsoft.com/mssql/server:2025-latest
+    container_name: mssql-db
+    environment:
+      - ACCEPT_EULA=Y
+      - SA_PASSWORD=Sandy2003
+    ports:
+      - "1434:1433"
+    volumes:
+      - mssql-data:/var/opt/mssql
+
+volumes:
+  mssql-data:
